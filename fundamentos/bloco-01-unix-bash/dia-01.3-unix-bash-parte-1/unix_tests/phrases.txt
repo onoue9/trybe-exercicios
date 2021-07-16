@@ -1,0 +1,4 @@
+Olá, bem vindo a Trybe!
+Prática, prática e prática!
+Serei um ótimo desenvolvedor web!
+
