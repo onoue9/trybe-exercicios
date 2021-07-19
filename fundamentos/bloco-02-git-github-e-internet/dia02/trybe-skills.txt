@@ -5,4 +5,7 @@ O que eu vou aprender na Trybe:
 - Git
 - HTML
 - CSS
+<<<<<<< HEAD
 - Front-End
+=======
+>>>>>>> e0198db65deae0701ca8a52562ba0e5546f1d006
