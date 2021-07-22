@@ -1,0 +1,37 @@
+h1 {
+    size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: red;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+ul{
+    line-height: 50px;
+}
+
+.pul {
+    background-color: blue;
+}
+
+#am {
+    background-color: yellow;
+}
+
+#ver {
+    background-color: red;
+}
+
+#mar {
+    background-color: brown;
+}
