@@ -1,0 +1,61 @@
+ol {
+    background-color: yellow;
+}
+
+ol li:first-of-type, ol li:nth-child(2n+1){
+    text-transform: uppercase;
+}
+
+ol li:nth-child(2n) {
+    color: green;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.linguagens li:first-of-type, .linguagens li:nth-of-type(2), .linguagens li:nth-of-type(3)  {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+#stack:hover {
+    font-weight: bold;
+    color: orange;
+}
+
+#w3s:hover {
+    font-weight: bold;
+    color: green;
+}
+
+#mdn:hover {
+    font-weight: bold;
+    color: black;
+}
+
+#dev:hover {
+    font-weight: bold;
+    color: yellow;
+}
+
+#trybe:hover {
+    font-weight: bold;
+    color: green;
+}
