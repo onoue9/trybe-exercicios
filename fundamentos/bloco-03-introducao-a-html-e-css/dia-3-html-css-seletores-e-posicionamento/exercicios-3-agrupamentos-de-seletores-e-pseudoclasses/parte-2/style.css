@@ -1,4 +1,24 @@
 div:hover {
     border: 2px;
     border-style: solid;
+ }
+ 
+div:nth-last-of-type(1) {
+    background-color: yellow;
+}
+
+div:nth-last-of-type(2) {
+    background-color: blue;
+}
+
+div:nth-last-of-type(3) {
+    background-color: orange;
+}
+
+div:nth-last-of-type(4) {
+    background-color: purple;
+}
+
+div:nth-last-of-type(5) {
+    background-color: red;
 }
