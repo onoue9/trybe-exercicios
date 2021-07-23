@@ -26,3 +26,11 @@ li {
 li em {
     font-weight: bold;
 }
+
+.linguagens li:first-of-type, .linguagens li:nth-of-type(2), .linguagens li:nth-of-type(3)  {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
