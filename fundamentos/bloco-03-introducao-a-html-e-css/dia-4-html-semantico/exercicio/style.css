@@ -1,0 +1,28 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h2, h3, h4, p {
+    text-align: left;
+    padding: 10px;
+}
+
+img {
+    width: 30%;
+    float: left;
+}
+
+table, th, td {
+    border: 2px solid green;
+    position: relative;
+    height: 50px;
+}
+
+.list-nav {
+    display: inline;
+    padding: 10px;
+}
+
+PAREI NO EXERCÍCIO 5 
