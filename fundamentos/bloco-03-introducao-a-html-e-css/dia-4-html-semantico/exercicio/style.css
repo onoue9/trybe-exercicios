@@ -4,20 +4,55 @@ html, body {
     margin: 0;
 }
 
-h2, h3, h4, p {
+ul, a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20%; 
+    display: inline-block;
+    font-weight: bold;
+}
+
+ul {
+    margin: 10px;
+    width: 70%;
+}
+
+h1, h2, p {
     text-align: left;
+    padding: 5px;
+}
+
+article {
+    text-align: center;
+    border: 2px solid skyblue;
+}
+
+#indice {
+    background-color: skyblue;
     padding: 10px;
+}
+
+section p {
+    width: 70%;
+}
+
+.stoma-section {
+    width: auto;
+    height: 400px;
 }
 
 img {
     width: 30%;
     float: left;
+    margin: 10px;
 }
 
 table, th, td {
-    border: 2px solid green;
+    border: 2px solid black;
+    padding: 5px;
     position: relative;
-    height: 50px;
+    width: auto;
+    height: auto;
 }
 
 .list-nav {
@@ -25,4 +60,58 @@ table, th, td {
     padding: 10px;
 }
 
-PAREI NO EXERCÍCIO 5 
+.carac-section {
+    background-color: skyblue;
+    height: 400px;
+}
+
+.vis-section {
+    height: 900px;
+}
+
+.ref-section {
+    text-align: center;
+    background-color: skyblue;
+}
+
+.ref-section h3 {
+    text-align: center;
+}
+
+.ref-section a{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+aside {
+    /* border: 2px solid black; */
+    border-radius: 3%;
+    position: fixed;
+    width: 28%;
+    height: 400px;    
+    left: 71%;
+    background-color: darkgray;
+}
+
+aside p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+aside img {
+    width: 90%;
+    left: 10px;
+    position: relative;
+    border-radius: 3%;
+}
+
+aside a {
+    padding: 0px;
+}
+
+footer p {
+    text-align: center;
+}
+
