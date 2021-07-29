@@ -1,18 +1,11 @@
-//exercício 5
+//exercício 6
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let maiorValor = 0;
+let valoresImpares = [];
 
 for(let index = 0; index < numbers.length; index += 1){
-  let valor = numbers[index];
-  for(let indexValor = 0; indexValor < numbers.length; indexValor += 1){
-    if(valor > numbers[indexValor]){
-      let valorMaior = valor;
-    
-    if(valorMaior > maiorValor){
-      maiorValor = valorMaior;
-    }
-  }
-  }
+  if(numbers[index]%2!=0){
+    valoresImpares.push(numbers[index]);
+  }  
 }
 
-console.log(maiorValor);
+console.log(valoresImpares);
