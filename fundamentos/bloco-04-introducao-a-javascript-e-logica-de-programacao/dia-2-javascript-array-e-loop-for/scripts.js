@@ -1,15 +1,15 @@
-//exercício 9
-let numeros = [];
-let divisao = [];
+//exercício bônus 1
+let numbers = 
+[45, 27, 57, 1330, 560, 800, 200, 70, 945, 54];
 
-for(let index = 1; index < 26; index += 1){
-  numeros.push(index);
+for (let index = 1; index < numbers.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] < numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
+    }
+  }
 }
 
-for(let indexDiv = 0; indexDiv < numeros.length; indexDiv += 1){
-  divisao.push(numeros[indexDiv] / 2);
-}
-
-console.log(numeros);
-console.log();
-console.log(divisao);
+console.log(numbers);
