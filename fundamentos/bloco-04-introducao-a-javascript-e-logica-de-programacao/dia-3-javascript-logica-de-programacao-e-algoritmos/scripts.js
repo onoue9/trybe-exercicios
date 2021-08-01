@@ -1,14 +1,18 @@
-//exercício 2
-let size = 5;
-let quadrado = "";
+//exercício 3
+let n = 5;
+let symbol = "*";
+let inputLine = "";
+let inputPosition = n;
 
-for(let indexLinha = 0; indexLinha < size; indexLinha += 1){  
-  quadrado += "*";
-  /* for(let indexColuna = 0; indexColuna < size; indexColuna += 1){
-    quadrado += "*"
-    } */
-  /* quadrado = ""; */
-  console.log(quadrado);
+for(let lineIndex = 0; lineIndex < n; lineIndex += 1){
+  for(let columnIndex = 0; columnIndex <= n; columnIndex += 1){
+    if(columnIndex < inputPosition){
+      inputLine = inputLine + " ";
+    }else {
+      inputLine = inputLine + symbol;
+    }
+  }
+  console.log(inputLine);
+  inputLine = "";
+  inputPosition -= 1;
 }
-
-
