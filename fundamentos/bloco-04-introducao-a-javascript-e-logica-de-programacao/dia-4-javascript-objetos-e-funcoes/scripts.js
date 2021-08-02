@@ -1,4 +1,4 @@
-//exercício 1
+//exercício 2
 let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
