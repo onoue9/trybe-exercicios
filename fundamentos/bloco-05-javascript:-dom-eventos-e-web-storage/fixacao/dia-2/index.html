@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    //exercícios de fixação 1
+    document.querySelector('#elementoOndeVoceEsta');
+    document.querySelector('#elementoOndeVoceEsta').parentNode.style.color = 'blue';
+    document.querySelector('#primeiroFilhoDoFilho').innerHTML = 'Esse é o primogenito do meu primogenito.';
+    document.querySelector('#pai').firstChild;
+    document.querySelector('#elementoOndeVoceEsta').parentNode;
+    document.querySelector('#elementoOndeVoceEsta').firstElementChild;
+    document.querySelector('#elementoOndeVoceEsta').firstElementChild.nextElementSibling;
+    document.querySelector('#pai').lastChild.previousSibling;
+
+    //exercícios de fixação 2
+    let familyList = document.querySelector('#pai');
+    let broElement = document.createElement('section');
+    familyList.appendChild(broElement);
+    let childElement = document.createElement('section');
+    let myElement = document.querySelector('#elementoOndeVoceEsta');
+    myElement.appendChild(childElement);
+    let firstSonOfSon = document.querySelector('#primeiroFilhoDoFilho');
+    let grandsonOfSon = document.createElement('section');
+    grandsonOfSon.className = 'grandson-of-son';
+    firstSonOfSon.appendChild(grandsonOfSon);
+    document.querySelector('.gransonOfSon').parentNode.parentNode.nextSibling;
+  </script>
+</body>
+</html>
