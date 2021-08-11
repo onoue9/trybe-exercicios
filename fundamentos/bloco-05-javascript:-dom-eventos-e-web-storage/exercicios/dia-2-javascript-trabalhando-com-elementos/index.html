@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //exercício 1
+      let title = document.createElement('h1');
+      title.innerHTML = 'Exercício 5.2 - JavaScript DOM'
+      document.body.appendChild(title);
+
+      //exercício 2
+      let main = document.createElement('main');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+
+      //exercício 3
+      let section = document.createElement('section');
+      section.className = 'center-content';
+      document.querySelector('.main-content').appendChild(section);
+
+      //exercício 4
+      let p = document.createElement('p');
+      p.innerHTML = 'DOM, Eventos e Web Storage'
+      document.querySelector('.center-content').appendChild(p);
+
+      //exercício 5
+      let leftSection = document.createElement('section');
+      leftSection.className = 'left-content';
+      document.querySelector('.main-content').appendChild(leftSection);
+
+      //exercício 6
+      let rightSection = document.createElement('section');
+      rightSection.className = 'right-content';
+      document.querySelector('.main-content').appendChild(rightSection);
+
+      //exercício 7
+      let image = document.createElement('img');
+      image.className = 'small-image';
+      image.setAttribute('src', 'https://picsum.photos/200');
+      document.querySelector('.left-content').appendChild(image);
+
+      //exercício 8
+      let UnorderedList = document.createElement('li');
+
+      for (let index = 0; index < 10; index += 1) {
+        switch (index) {
+          case 0 :
+            UnorderedList.push('um');
+          case 1 :
+            UnorderedList.push('dois');
+        }
+      }
+
+      document.querySelector('.right-content').appendChild(UnorderedList);
+
+      console.log(UnorderedList);
+    </script>
+  </body>
+</html>
