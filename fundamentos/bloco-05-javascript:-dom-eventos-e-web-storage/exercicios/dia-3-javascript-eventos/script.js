@@ -36,3 +36,15 @@ function decemberDays () {
 };
 
 decemberDays();
+
+//exercício 2
+function holydayButton(holyday = 'Feriados') {
+  const holydayBtn = document.createElement('button');
+  holydayBtn.innerHTML = 'Feriados';
+
+  const parentButton = document.querySelector('.buttons-container');
+
+  parentButton.appendChild(holydayBtn);
+}
+
+holydayButton();
