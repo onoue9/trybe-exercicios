@@ -37,14 +37,28 @@ function decemberDays () {
 
 decemberDays();
 
-//exercício 2
-function holydayButton(holyday = 'Feriados') {
-  const holydayBtn = document.createElement('button');
-  holydayBtn.innerHTML = 'Feriados';
+//exercício 2 e 3
+function holidayButton(holiday = 'Feriados') {
+  const holidayBtn = document.createElement('button');
+  holidayBtn.innerHTML = 'Feriados';
 
   const parentButton = document.querySelector('.buttons-container');
 
-  parentButton.appendChild(holydayBtn);
+  parentButton.appendChild(holidayBtn);
+
+  function holidayColor () {
+    const holidays = document.querySelectorAll('.holiday');
+    for (let index = 0; index < holidays.length; index += 1) {
+      if (holidays[index].style.backgroundColor == 'red') {
+        holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+          holidays[index].style.backgroundColor = 'red';
+      }
+    }
+  }
+
+  holidayBtn.addEventListener('click', holidayColor);
 }
 
-holydayButton();
+holidayButton();
+
