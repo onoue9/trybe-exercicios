@@ -92,6 +92,22 @@
       image.className = 'small-image';
       image.setAttribute('src', 'https://picsum.photos/200');
       document.querySelector('.left-content').appendChild(image);
+
+      //exercício 8
+      let UnorderedList = document.createElement('li');
+
+      for (let index = 0; index < 10; index += 1) {
+        switch (index) {
+          case 0 :
+            UnorderedList.push('um');
+          case 1 :
+            UnorderedList.push('dois');
+        }
+      }
+
+      document.querySelector('.right-content').appendChild(UnorderedList);
+
+      console.log(UnorderedList);
     </script>
   </body>
 </html>
