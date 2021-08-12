@@ -66,9 +66,9 @@ function holidayButton (holiday = 'Feriados') {
 holidayButton();
 
 //exercícios 4 e 5
-function fridayButton (friday = "Sexta-Feira") {
+function fridayButton (friday) {
   const fridayBtn = document.createElement('button');
-  fridayBtn.innerHTML = friday;
+  fridayBtn.innerHTML = 'Sexta-feira';
   fridayBtn.id = 'btn-friday';
 
   const parentButton = document.querySelector('.buttons-container');
@@ -76,12 +76,12 @@ function fridayButton (friday = "Sexta-Feira") {
   parentButton.appendChild(fridayBtn);
 
 
-  function changeFridayText () {
+  function changeFridayText (string) {
     const fridays = document.querySelectorAll('.friday');
     const days = ['4','11','18','25'];
     for (let index = 0; index < fridays.length; index += 1) {      
       if (fridays[index].innerHTML == days[index]) {
-        fridays[index].innerHTML = 'Friday';
+        fridays[index].innerHTML = friday;
       } else {
         fridays[index].innerHTML = days[index];
       }
@@ -91,5 +91,25 @@ function fridayButton (friday = "Sexta-Feira") {
   fridayBtn.addEventListener('click', changeFridayText);
 }
 
-fridayButton();
+fridayButton('Sextou');
 
+//exercício 6
+function zoomInOut () {
+  const days = document.querySelectorAll('.day');
+
+  function zoomIn () {
+    event.target.style.fontSize = '40px';
+  }
+  for (let index = 0; index < days.length; index += 1) {
+    days[index].addEventListener('mouseover', zoomIn);  
+  }
+
+  function zoomOut () {
+    event.target.style.fontSize = '20px';
+  }  
+  for (let index = 0; index < days.length; index += 1) {
+    days[index].addEventListener('mouseout', zoomOut);
+  }
+}
+
+zoomInOut();
