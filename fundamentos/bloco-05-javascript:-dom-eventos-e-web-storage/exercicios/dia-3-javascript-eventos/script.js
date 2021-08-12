@@ -22,10 +22,12 @@ function decemberDays () {
 
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const dayListMonth = document.createElement('li');
-    if (dezDaysList[index] == 24 || dezDaysList[index] == 25 || dezDaysList[index] == 31) {
+    if (dezDaysList[index] == 24 || dezDaysList[index] == 31) {
       dayListMonth.className = 'day holiday';
-    }else if (dezDaysList[index] == 4 || dezDaysList[index] == 11 || dezDaysList[index] == 18 || dezDaysList[index] == 25) {
+    } else if (dezDaysList[index] == 4 || dezDaysList[index] == 11 || dezDaysList[index] == 18) {
       dayListMonth.className = 'day friday';
+    } else if (dezDaysList[index] == 25) {
+      dayListMonth.className = 'day holiday friday';
     } else {
       dayListMonth.className = 'day';
     }
@@ -63,7 +65,7 @@ function holidayButton (holiday = 'Feriados') {
 
 holidayButton();
 
-//exercício 4
+//exercícios 4 e 5
 function fridayButton (friday = "Sexta-Feira") {
   const fridayBtn = document.createElement('button');
   fridayBtn.innerHTML = friday;
@@ -72,6 +74,21 @@ function fridayButton (friday = "Sexta-Feira") {
   const parentButton = document.querySelector('.buttons-container');
 
   parentButton.appendChild(fridayBtn);
+
+
+  function changeFridayText () {
+    const fridays = document.querySelectorAll('.friday');
+    const days = ['4','11','18','25'];
+    for (let index = 0; index < fridays.length; index += 1) {      
+      if (fridays[index].innerHTML == days[index]) {
+        fridays[index].innerHTML = 'Friday';
+      } else {
+        fridays[index].innerHTML = days[index];
+      }
+    }
+  }
+
+  fridayBtn.addEventListener('click', changeFridayText);
 }
 
 fridayButton();
