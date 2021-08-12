@@ -41,6 +41,7 @@ decemberDays();
 function holidayButton (holiday = 'Feriados') {
   const holidayBtn = document.createElement('button');
   holidayBtn.innerHTML = holiday;
+  holidayBtn.id = 'btn-holiday';
 
   const parentButton = document.querySelector('.buttons-container');
 
