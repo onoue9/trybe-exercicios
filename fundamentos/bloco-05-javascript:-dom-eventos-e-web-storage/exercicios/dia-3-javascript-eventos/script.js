@@ -37,10 +37,10 @@ function decemberDays () {
 
 decemberDays();
 
-//exercício 2 e 3
-function holidayButton(holiday = 'Feriados') {
+//exercícios 2 e 3
+function holidayButton (holiday = 'Feriados') {
   const holidayBtn = document.createElement('button');
-  holidayBtn.innerHTML = 'Feriados';
+  holidayBtn.innerHTML = holiday;
 
   const parentButton = document.querySelector('.buttons-container');
 
@@ -61,4 +61,17 @@ function holidayButton(holiday = 'Feriados') {
 }
 
 holidayButton();
+
+//exercício 4
+function fridayButton (friday = "Sexta-Feira") {
+  const fridayBtn = document.createElement('button');
+  fridayBtn.innerHTML = friday;
+  fridayBtn.id = 'btn-friday';
+
+  const parentButton = document.querySelector('.buttons-container');
+
+  parentButton.appendChild(fridayBtn);
+}
+
+fridayButton();
 
