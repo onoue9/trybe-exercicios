@@ -76,4 +76,146 @@ html {
       
   }
 
-  
+  @media screen and (min-width: 500px) and (max-width: 1024px) {
+    body {
+        margin: 0px;
+        font-size: 30px;
+    }
+
+    header {
+        margin: 1px;
+        padding: 1px;
+        background-color: seagreen;
+    }
+
+    header p {
+      text-align: center;        
+    }
+
+    #nav-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    nav li {
+        background-color: goldenrod;
+        border-radius: 5px;
+        list-style: none;
+    }
+
+    .aside-one {
+        margin: 1px;
+        padding: 1px;
+        background-color: dodgerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside-two {
+        margin: 1px;
+        padding: 1px;
+        background-color: lightpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #info-ul li {          
+        list-style: none;
+    }
+
+    .main-content {
+        margin: 50px;
+        text-align: center;
+    }
+
+    footer {
+        margin: 1px;
+        padding: 1px;
+        text-align: center;
+        background-color: gold;
+    }
+
+    footer p {
+        margin: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0px;
+        font-size: 25px;
+    }
+
+    header {
+        margin: 1px;
+        padding: 1px;
+        background-color: seagreen;
+    }
+
+    header p {
+      text-align: center;        
+    }
+
+    #nav-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    nav li {
+        background-color: goldenrod;
+        border-radius: 5px;
+        list-style: none;
+    }
+
+    .aside-one {
+        margin: 1px;
+        padding: 1px;
+        background-color: dodgerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside-two {
+        margin: 1px;
+        padding: 1px;
+        background-color: lightpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #info-ul li {          
+        list-style: none;
+    }
+
+    .main-content {
+        margin: 50px;
+        text-align: center;
+    }
+
+    footer {
+        margin: 1px;
+        padding: 1px;
+        text-align: center;
+        background-color: gold;
+    }
+
+    footer p {
+        margin: 10px;
+    }
+    
+}
