@@ -16,4 +16,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
 }
